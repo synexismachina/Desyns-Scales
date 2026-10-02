@@ -1,0 +1,145 @@
+export const services = [
+  {
+    index: "01",
+    id: "ai-automation",
+    icon: "BrainCircuit",
+    category: "AI & Automation",
+    title: "Intelligent systems that run the business for you",
+    description:
+      "AI receptionists, website chatbots and workflow automation that qualify leads, book appointments and handle support — trained on your business, working around the clock.",
+    points: [
+      "AI receptionist & website chatbot",
+      "Lead qualification & appointment booking",
+      "CRM & administrative automation",
+      "Email and notification automation",
+    ],
+  },
+  {
+    index: "02",
+    id: "digital-identity",
+    icon: "Gem",
+    category: "Digital Identity",
+    title: "A brand and presence built to be taken seriously",
+    description:
+      "Logo development, brand guidelines and visual systems that give a business a consistent, premium identity across every touchpoint.",
+    points: [
+      "Brand identity & logo development",
+      "Brand guidelines & visual systems",
+      "Corporate design & stationery",
+      "Marketing & social media design",
+    ],
+  },
+  {
+    index: "03",
+    id: "growth-visibility",
+    icon: "TrendingUp",
+    category: "Growth & Visibility",
+    title: "Search visibility and content that compounds",
+    description:
+      "Search engine optimisation, content strategy and website optimisation focused on turning visibility into qualified demand.",
+    points: [
+      "Search engine optimisation",
+      "Content & social media systems",
+      "Website optimisation",
+      "Search visibility improvement",
+    ],
+  },
+  {
+    index: "04",
+    id: "business-systems",
+    icon: "LayoutDashboard",
+    category: "Business Systems",
+    title: "Infrastructure designed for how the business actually grows",
+    description:
+      "Digital infrastructure audits, CRM systems and business dashboards that replace fragmented tools with one connected structure.",
+    points: [
+      "Digital infrastructure audit",
+      "CRM & customer-management systems",
+      "Business dashboards & reporting",
+      "Process optimisation",
+    ],
+  },
+];
+
+export const approach = [
+  {
+    index: "01",
+    title: "Discover",
+    description:
+      "We analyse the business — its current systems, customers, challenges and growth opportunities.",
+  },
+  {
+    index: "02",
+    title: "Strategise",
+    description:
+      "We develop a practical strategy based on the business's objectives, resources and market.",
+  },
+  {
+    index: "03",
+    title: "Build",
+    description:
+      "We design and implement the required digital assets, technology, branding and systems.",
+  },
+  {
+    index: "04",
+    title: "Automate",
+    description:
+      "We identify repetitive processes and implement automation and AI where it earns its place.",
+  },
+  {
+    index: "05",
+    title: "Optimise",
+    description:
+      "We monitor performance, identify weaknesses, and continuously improve what's been built.",
+  },
+  {
+    index: "06",
+    title: "Scale",
+    description:
+      "Once the foundation is working, we focus on the systems that support sustainable growth.",
+  },
+];
+
+export const whyUs = [
+  {
+    icon: "Layers",
+    title: "One growth partner",
+    description:
+      "Instead of hiring separate providers for websites, design, automation, SEO and strategy, a business works with one integrated partner.",
+  },
+  {
+    icon: "PenTool",
+    title: "Built around the business",
+    description:
+      "We don't believe in one-size-fits-all solutions. Every engagement is shaped around a business's specific needs and objectives.",
+  },
+  {
+    icon: "Compass",
+    title: "Technology plus strategy",
+    description:
+      "Technology alone doesn't create growth. We pair it with strategic thinking so every system contributes to real business objectives.",
+  },
+  {
+    icon: "Zap",
+    title: "Automation first",
+    description:
+      "Wherever a process can be made faster, more efficient or less dependent on manual work, we look for the opportunity to automate it.",
+  },
+  {
+    icon: "Infinity",
+    title: "Designed to scale",
+    description:
+      "Our objective isn't only to fix today's problems. We build systems that can support tomorrow's growth.",
+  },
+];
+
+export const outcomes = [
+  "A stronger professional presence",
+  "Better customer experiences",
+  "Increased operational efficiency",
+  "Reduced manual workload",
+  "Improved lead management",
+  "Faster business processes",
+  "Better digital visibility",
+  "Improved scalability",
+];

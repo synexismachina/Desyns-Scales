@@ -1,0 +1,35 @@
+.outcomes {
+  background: var(--black);
+}
+
+.outcomes__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.outcomes__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 20px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-size: 13.5px;
+  color: var(--paper);
+  transition: border-color 0.35s ease, background 0.35s ease, transform 0.35s ease;
+}
+
+.outcomes__chip svg {
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.outcomes__chip:hover {
+  border-color: var(--gold);
+  background: rgba(201, 162, 78, 0.06);
+  transform: translateY(-2px);
+}

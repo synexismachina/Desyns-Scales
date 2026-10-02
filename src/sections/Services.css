@@ -1,0 +1,15 @@
+.services {
+  background: var(--black);
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+@media (max-width: 860px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+}

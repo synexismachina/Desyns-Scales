@@ -1,0 +1,63 @@
+.btn {
+  --btn-pad-y: 16px;
+  --btn-pad-x: 30px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: var(--btn-pad-y) var(--btn-pad-x);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  transition: transform 0.45s var(--ease-out), background-color 0.35s var(--ease-soft),
+    border-color 0.35s var(--ease-soft), color 0.35s var(--ease-soft);
+  white-space: nowrap;
+}
+
+.btn__icon {
+  transition: transform 0.4s var(--ease-out);
+}
+
+.btn:hover .btn__icon {
+  transform: translateX(4px);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn--solid {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold) 55%, var(--gold-deep));
+  color: #16130a;
+  border-color: transparent;
+}
+
+.btn--solid:hover {
+  filter: brightness(1.08);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--paper);
+  border-color: var(--line-strong);
+}
+
+.btn--outline:hover {
+  border-color: var(--gold);
+  color: var(--gold-light);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--gold-light);
+  padding-inline: 0;
+  letter-spacing: 0.1em;
+}
+
+.btn--ghost:hover {
+  color: var(--paper);
+}
