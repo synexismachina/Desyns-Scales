@@ -1,10 +1,17 @@
 import * as Icons from "lucide-react";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import Reveal from "./Reveal";
+import { serviceLinks } from "../data/serviceLinks";
 import "./ServiceCard.css";
+
+const norm = (s) => String(s || "").toLowerCase().replace(/\s+/g, " ").trim();
 
 export default function ServiceCard({ service, delay = 0 }) {
   const Icon = Icons[service.icon] || Icons.Sparkle;
+  const page =
+    serviceLinks.find((s) => norm(s.name) === norm(service.category)) ||
+    serviceLinks.find((s) => s.slug === service.id);
 
   return (
     <Reveal delay={delay} className="service-card">
@@ -25,9 +32,9 @@ export default function ServiceCard({ service, delay = 0 }) {
         ))}
       </ul>
 
-      <a href="#contact" className="service-card__link">
+      <Link to={page ? page.path : "/#contact"} className="service-card__link">
         Learn more <ArrowUpRight size={14} />
-      </a>
+      </Link>
 
       <div className="service-card__edge" aria-hidden="true" />
     </Reveal>

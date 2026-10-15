@@ -6,12 +6,12 @@ export const services = [
     category: "AI & Automation",
     title: "Intelligent systems that run the business for you",
     description:
-      "AI receptionists, website chatbots and workflow automation that qualify leads, book appointments and handle support — trained on your business, working around the clock.",
+      "AI agents, an AI receptionist, WhatsApp automation and workflow automation that qualify leads, book appointments and handle customer service — trained on your business, working around the clock.",
     points: [
-      "AI receptionist & website chatbot",
-      "Lead qualification & appointment booking",
-      "CRM & administrative automation",
-      "Email and notification automation",
+      "AI receptionist, voice agent & chatbot",
+      "Lead generation & appointment booking",
+      "CRM, sales & WhatsApp automation",
+      "Automated lead follow-up & support",
     ],
   },
   {
@@ -56,7 +56,7 @@ export const services = [
       "Digital infrastructure audit",
       "CRM & customer-management systems",
       "Business dashboards & reporting",
-      "Process optimisation",
+      "Process automation & optimisation",
     ],
   },
 ];
@@ -84,7 +84,7 @@ export const approach = [
     index: "04",
     title: "Automate",
     description:
-      "We identify repetitive processes and implement automation and AI where it earns its place.",
+      "We identify repetitive processes and implement AI agents, CRM automation and workflow tools where they earn their place.",
   },
   {
     index: "05",
@@ -123,7 +123,7 @@ export const whyUs = [
     icon: "Zap",
     title: "Automation first",
     description:
-      "Wherever a process can be made faster, more efficient or less dependent on manual work, we look for the opportunity to automate it.",
+      "Wherever a process can be made faster or less dependent on manual work, we look for business automation that fits how the team actually operates.",
   },
   {
     icon: "Infinity",
@@ -138,8 +138,8 @@ export const outcomes = [
   "Better customer experiences",
   "Increased operational efficiency",
   "Reduced manual workload",
-  "Improved lead management",
-  "Faster business processes",
+  "Improved lead automation & follow-up",
+  "Faster process automation",
   "Better digital visibility",
   "Improved scalability",
 ];

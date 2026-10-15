@@ -10,7 +10,7 @@ export default function Services() {
         <SectionHeading
           eyebrow="What We Do"
           title="Four disciplines. One connected system."
-          description="Rather than a single service, Desyns Scales builds across the disciplines a growing business actually needs — grouped so nothing operates in isolation."
+          description="Rather than a single service, Desyns Scales builds AI solutions for businesses across the disciplines a growing company actually needs — grouped so automation, brand and systems don't operate in isolation."
         />
 
         <div className="services__grid">

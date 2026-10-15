@@ -1,66 +1,65 @@
-# Desyns Scales — Website
+# Desyns Scales Website
 
-A production-ready marketing site for Desyns Scales, built with React + Vite.
+A responsive marketing website for Desyns Scales, built with React, Vite and React Router. The visual system uses a dark charcoal base, champagne-gold accents, Fraunces display typography and Inter for UI/body copy.
 
-## Getting started
+## Requirements
+
+- Node.js 20 or newer
+- npm
+
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Then open the local URL Vite prints (usually `http://localhost:5173`).
+Vite prints the local development URL, usually `http://localhost:5173`.
 
-To build for production:
+## Build and preview
 
 ```bash
 npm run build
-npm run preview   # preview the production build locally
+npm run preview
 ```
+
+The production build is written to `dist/`.
+
+## Routes
+
+- `/` — Main marketing page
+- `/about` — Company story, approach, capabilities, sectors and current proof status
+- `/services/ai-automation` — Long-form AI automation landing page covering receptionists, chatbots, messaging, lead handling, workflow automation, integrations, governance, measurement and FAQs
+- `/services/digital-identity` — Brand identity service page
+- `/services/growth-visibility` — SEO and visibility service page
+- `/services/business-systems` — CRM, dashboard and process/system work
+- `/privacy-policy` and `/terms-of-service` — Legal pages
+- `/insights` — Placeholder page; marked `noindex` until publishable articles exist
 
 ## Project structure
 
-```
+```text
 src/
-  components/     Reusable UI: Navbar, Footer, Button, ServiceCard,
-                   AnimatedGoldLines, DashboardPreview, Reveal, SectionHeading
-  sections/       One file per homepage section (Hero, Introduction,
-                   Services, HowWeWork, WhyUs, Showcase, Outcomes, FinalCTA)
-  data/           Copy and structured content sourced from the Desyns
-                   Scales proposal (services, approach, why-us, outcomes)
-  assets/         Processed logo/mark artwork (transparent, dark-mode ready)
-  styles/         Design tokens (tokens.css) and global reset (global.css)
-  App.jsx         Page composition
-  main.jsx        Entry point
+  assets/       Brand marks and logo assets
+  components/   Shared navigation, layouts, buttons, visuals and cards
+  data/         Service, FAQ, about-page and SEO content
+  hooks/        Per-route SEO metadata helper
+  pages/        About, Insights, legal and service pages
+  sections/     Reusable home-page sections
+  styles/       Global reset and design tokens
+public/         Favicon, Netlify SPA redirects, robots.txt and sitemap.xml
+  App.jsx       Routes and page-level scroll handling
+  main.jsx      React entry point
 ```
 
-## Notes on design decisions
+## Content and SEO editing
 
-- **Palette & type**: near-black/charcoal backgrounds with a metallic gold
-  accent (`--gold` family in `styles/tokens.css`), paired with **Fraunces**
-  (editorial display serif) and **Inter** (body/UI sans). Both load from
-  Google Fonts in `index.html`.
-- **Flowing gold lines**: `components/AnimatedGoldLines.jsx` renders slow,
-  looping SVG paths with a travelling gradient highlight — pure CSS
-  animation (`stroke-dashoffset`), no JS ticking, so it stays GPU-friendly.
-  Respects `prefers-reduced-motion`.
-- **Hero visual**: rather than a stock photo (explicitly avoided per brief),
-  the hero and showcase use an original CSS/SVG "dashboard" mockup
-  (`components/DashboardPreview.jsx`) in the CoinSphere-style tech language,
-  layered over an abstract gold mesh gradient for the AP-style cinematic feel.
-- **Services**: grouped into exactly the four categories from the brief —
-  AI & Automation, Digital Identity, Growth & Visibility, Business Systems.
-  Custom software, web development and mobile app development are
-  intentionally excluded everywhere, per the content restriction in the brief.
-- **Content source**: headings, the six-stage approach, "Why Desyns Scales"
-  pillars and outcomes are adapted from `Desyns Scales — Professional
-  Service Proposal.docx`.
+- `src/data/services.js` — Home-page services, process and positioning content
+- `src/data/aiAutomationPage.js` — AI automation page navigation, service overview and FAQ content
+- `src/data/about.js` — About-page copy, structured data and approved project list
+- `src/hooks/useSeo.js` — Page title, description, canonical URL, Open Graph/Twitter metadata and JSON-LD
+- `index.html` — Default home-page metadata and organization structured data
 
-## Extending
+Contact calls to action currently use `mailto:info@desynsscales.com`; no backend contact form is configured. The Desyns Scales AI platform is described as in development, not as a currently available product. The About page intentionally avoids inventing case studies: add projects only after details and outcomes are confirmed and approved for publication.
 
-- Update copy/services in `src/data/services.js` — components re-render
-  automatically from that single source of truth.
-- Swap the contact `mailto:` links in `FinalCTA.jsx` / `Footer.jsx` for a
-  real form or booking link when one exists.
-- Logo art lives in `src/assets/` — `logo-dark.png` (full lockup) and
-  `mark-dark.png` (icon only), both already prepared for dark backgrounds.
+Before launch, verify the canonical domain, legal/company details, email address, third-party account permissions and each page's metadata. The sitemap currently excludes `/insights` because that placeholder is marked `noindex`. Add published articles to the sitemap before removing `noindex` from `/insights`.

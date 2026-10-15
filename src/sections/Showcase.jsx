@@ -26,9 +26,9 @@ export default function Showcase() {
           to <em>intelligent.</em>
         </Reveal>
         <Reveal as="p" delay={0.16} className="showcase__desc">
-          Every engagement moves a business along the same line — away from
-          manual, disconnected work and toward systems that run themselves
-          and compound over time.
+          Every engagement moves a South African business along the same line —
+          away from manual, disconnected work and toward workflow automation
+          and AI-assisted operations that compound over time.
         </Reveal>
 
         <div className="showcase__stages">
