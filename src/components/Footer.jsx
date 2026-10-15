@@ -1,20 +1,16 @@
 import logoDark from "../assets/logo-dark.png";
+import { Link } from "react-router-dom";
 import "./Footer.css";
+import { serviceLinks } from "../data/serviceLinks";
 
 const NAV = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/#services" },
+  { label: "Work", href: "/#work" },
+  { label: "Contact", href: "/#contact" },
 ];
 
-const SERVICES = [
-  "AI & Automation",
-  "Digital Identity",
-  "Growth & Visibility",
-  "Business Systems",
-];
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -41,9 +37,9 @@ export default function Footer() {
         <div className="footer__col">
           <p className="footer__heading">Services</p>
           <ul>
-            {SERVICES.map((s) => (
-              <li key={s}>
-                <a href="#services">{s}</a>
+            {serviceLinks.map((s) => (
+              <li key={s.slug}>
+                <Link to={s.path}>{s.name}</Link>
               </li>
             ))}
           </ul>
@@ -56,6 +52,9 @@ export default function Footer() {
               <a href="mailto:info@desynsscales.com">info@desynsscales.com</a>
             </li>
             <li>
+              <span className="footer__location">Pretoria, South Africa</span>
+            </li>
+            <li>
               <a href="https://www.desynsscales.com">www.desynsscales.com</a>
             </li>
           </ul>
@@ -64,6 +63,11 @@ export default function Footer() {
 
       <div className="container footer__bottom">
         <p>© {year} Desyns Scales. All Rights Reserved.</p>
+        <nav className="footer__legal" aria-label="Legal">
+          <Link to="/privacy-policy">Privacy Policy</Link>
+          <span className="footer__legal-dot" aria-hidden="true">•</span>
+          <Link to="/terms-of-service">Terms of Service</Link>
+        </nav>
       </div>
     </footer>
   );

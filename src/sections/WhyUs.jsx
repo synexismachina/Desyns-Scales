@@ -12,7 +12,7 @@ export default function WhyUs() {
           <SectionHeading
             eyebrow="Why Desyns Scales"
             title="One partner, built around the business."
-            description="Growth rarely comes from one more tool. It comes from a partner who treats strategy, design, technology and automation as one connected system."
+            description="Growth rarely comes from one more tool. It comes from an automation agency in South Africa that treats strategy, design, technology and AI automation as one connected system."
           />
         </div>
 

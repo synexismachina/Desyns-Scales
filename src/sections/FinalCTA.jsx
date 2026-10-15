@@ -25,9 +25,9 @@ export default function FinalCTA() {
         </Reveal>
 
         <Reveal as="p" delay={0.16} className="finalcta__desc">
-          Desyns Scales helps businesses move from inefficient, manual
-          operations to structured, scalable digital systems — built around
-          strategy first, technology second.
+          Desyns Scales is an automation agency in South Africa helping businesses
+          move from inefficient, manual operations to structured, scalable digital
+          systems — strategy first, technology second.
         </Reveal>
 
         <Reveal delay={0.24} className="finalcta__actions">

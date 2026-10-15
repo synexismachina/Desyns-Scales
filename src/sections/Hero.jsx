@@ -18,9 +18,9 @@ const item = {
 };
 
 const stats = [
-  { icon: Zap, label: "Automate", sub: "Repetitive tasks" },
-  { icon: TrendingUp, label: "Generate", sub: "More leads" },
-  { icon: Layers3, label: "Scale", sub: "Your business" },
+  { icon: Zap, label: "Automate", sub: "Business processes" },
+  { icon: TrendingUp, label: "Generate", sub: "Qualified leads" },
+  { icon: Layers3, label: "Scale", sub: "Your operations" },
 ];
 
 export default function Hero() {
@@ -40,7 +40,7 @@ export default function Hero() {
       >
         <div className="hero__copy">
           <motion.p className="eyebrow" variants={item}>
-            AI Automation &amp; Growth
+            AI Automation Agency · South Africa
           </motion.p>
 
           <motion.h1 className="hero__title" variants={item}>
@@ -50,9 +50,10 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p className="hero__subtitle" variants={item}>
-            Desyns Scales helps businesses transform their digital operations with
-            intelligent systems, automation and strategic digital solutions —
-            built around how the business actually grows.
+            Desyns Scales is an AI automation agency in South Africa. We help
+            businesses transform operations with workflow automation, intelligent
+            systems and strategic digital solutions — built around how the
+            business actually grows.
           </motion.p>
 
           <motion.div className="hero__actions" variants={item}>

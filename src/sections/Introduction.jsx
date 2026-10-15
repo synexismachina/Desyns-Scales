@@ -33,10 +33,10 @@ export default function Introduction() {
               customer-management systems that were never built to scale.
             </p>
             <p>
-              Desyns Scales helps businesses identify inefficiencies, build
-              better digital infrastructure, automate repetitive operations
-              and create systems designed for growth — so effort finally
-              compounds instead of disappearing into admin.
+              Desyns Scales helps South African businesses identify inefficiencies,
+              build better digital infrastructure and implement business process
+              automation — so effort finally compounds instead of disappearing
+              into admin.
             </p>
           </Reveal>
 
