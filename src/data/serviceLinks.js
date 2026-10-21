@@ -9,7 +9,7 @@ export const serviceLinks = [
     slug: "digital-identity",
     path: "/services/digital-identity",
     name: "Digital Identity",
-    blurb: "Brand identity, logos, guidelines and visual systems.",
+    blurb: "Brand strategy, logo design, corporate identity and practical brand guidelines.",
   },
   {
     slug: "growth-visibility",

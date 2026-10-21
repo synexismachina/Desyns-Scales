@@ -21,9 +21,9 @@ export const services = [
     category: "Digital Identity",
     title: "A brand and presence built to be taken seriously",
     description:
-      "Logo development, brand guidelines and visual systems that give a business a consistent, premium identity across every touchpoint.",
+      "Brand strategy, logo design, corporate identity and visual systems that help South African businesses present a consistent, recognisable identity across digital and print touchpoints.",
     points: [
-      "Brand identity & logo development",
+      "Brand strategy, positioning & logo design",
       "Brand guidelines & visual systems",
       "Corporate design & stationery",
       "Marketing & social media design",
